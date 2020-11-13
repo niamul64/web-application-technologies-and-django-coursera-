@@ -1,7 +1,8 @@
 goto: https://www.pythonanywhere.com/ 
 login
 goto: console -> bash (it means: using  linux ) link: https://www.pythonanywhere.com/user/niamul64/consoles/17810003/
-now follwo the command from: https://www.dj4e.com/assn/dj4e_install.md
+now follow the command from: https://www.dj4e.com/assn/dj4e_install.md
+
 
 
 building application:
@@ -9,3 +10,36 @@ cd ~ # goinhg to home derectory
 mkdir django_projects #making a folder for all django_projects
 cd django_projects # changing directory to 
 django-admin startproject mysite # making a django project 'mysite'
+
+
+now,
+You need to edit the file ~/django_projects/mysite/mysite/settings.py and change the allowed hosts line (around line 28) to be:
+ ALLOWED_HOSTS = [ '*' ]
+
+After editing the setings, goto the django project (mysite)
+command : python manage.py check #use to check the project file
+ 
+
+
+
+Adding Your Polls Application (adding a app 'Polls' ):
+
+cd ~/django_projects/mysite # goto django project
+python3 manage.py startapp polls # creating app
+
+
+Write your first view
+Let’s write the first view. Open the file polls/views.py and put the following Python code in it:
+
+goto -->  polls/views.py: 
+
+from django.http import HttpResponse
+
+def index(request):
+    return HttpResponse("Hello, world. You're at the polls index.")
+
+
+
+
+
+
