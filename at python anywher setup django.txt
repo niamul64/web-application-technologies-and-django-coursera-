@@ -1,2 +1,11 @@
 goto: https://www.pythonanywhere.com/ 
 login
+goto: console -> bash (it means: using  linux ) link: https://www.pythonanywhere.com/user/niamul64/consoles/17810003/
+now follwo the command from: https://www.dj4e.com/assn/dj4e_install.md
+
+
+building application:
+cd ~ # goinhg to home derectory
+mkdir django_projects #making a folder for all django_projects
+cd django_projects # changing directory to 
+django-admin startproject mysite # making a django project 'mysite'
