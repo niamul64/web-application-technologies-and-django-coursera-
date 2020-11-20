@@ -1,7 +1,58 @@
 workon django3 #to switch on django 3
 
 
-now sql lite3 commands:
+now sql lite3 commands: (commands :    https://www.dj4e.com/lectures/SQL-01-Basics.txt)
 ls #to show the directories
 ls -l #total number of directories
-sqlite3 zip.sqlite3 # here making the data base. now 'sqlite3' is the linux command to create database, 'zip' is the file name
+sqlite3 zip.sqlite3 # here making the data base. now 'sqlite3' is the linux command to create database, 'zip' is the file name and .sqlite3 is file type
+
+
+
+now comand line will change, (django3)$   to   sqlite>
+
+
+
+.help # to see what we can do now.
+.table # to see what tables are in there
+
+
+#create table command
+CREATE TABLE "Users" (    
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE, 
+    "name" TEXT,
+    "email" TEXT
+);
+
+.table # to see what tables are in there
+
+.schema Users #check details about a Users table
+
+SELECT * FROM Users; # see all data in the Users table
+
+INSERT INTO Users (name, email) VALUES ('Kristen', 'kf@umich.edu'); #insert data
+
+SELECT * FROM Users; # see all data in the Users table (will show, inserted data, and a primary key)
+
+# now here the data will be shown too closely to make more gap between columns :
+.mode column # show data with more space bettween columns
+
+
+
+
+DELETE FROM Users WHERE email='ted@umich.edu';
+
+SELECT * FROM Users;
+
+UPDATE Users SET name="Charles" WHERE email='csev@umich.edu';
+
+SELECT * FROM Users;
+
+SELECT * FROM Users WHERE email='csev@umich.edu';
+
+SELECT * FROM Users ORDER BY email;
+
+SELECT * FROM Users ORDER BY name DESC;
+
+If you want: DROP TABLE Users 
+
+.quit
