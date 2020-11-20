@@ -1,0 +1,7 @@
+workon django3 #to switch on django 3
+
+
+now sql lite3 commands:
+ls #to show the directories
+ls -l #total number of directories
+sqlite3 zip.sqlite3 # here making the data base. now 'sqlite3' is the linux command to create database, 'zip' is the file name

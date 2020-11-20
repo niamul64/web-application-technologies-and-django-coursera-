@@ -1,6 +1,6 @@
 goto: https://www.pythonanywhere.com/ 
 login
-goto: console -> bash (it means: using  linux ) link: https://www.pythonanywhere.com/user/niamul64/consoles/17810003/
+goto: console -> bash (it means: using  linux ) 
 now follow the command from: https://www.dj4e.com/assn/dj4e_install.md
 
 
