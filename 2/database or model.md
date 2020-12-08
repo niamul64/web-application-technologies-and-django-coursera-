@@ -10,6 +10,8 @@
 <br><br>
 
 ### value inserting :
+<br> most important command python manage.py shell<br>
+now from shell we can insert value to data base<br>
 
 <br>
 <img width="500" src= "pic/inserting a row in table.JPG"/>
@@ -31,3 +33,48 @@
 
 <br>
 <img width="500" src= "pic/data type.JPG"/>
+
+
+<br><br><br><br>
+all commands togater : https://www.dj4e.com/lectures/DJ-02-Model-Single.txt
+<br><br><br>
+
+#### reset the data base: $ rm db.sqlite3  
+<br><br>
+now, make data base table in models.py: (example)
+<br>
+<br>
+from django.db import models<br>
+
+class Question(models.Model):<br>
+    question_text = models.CharField(max_length=200)<br>
+    pub_date = models.DateTimeField('date published')<br>
+
+
+class Choice(models.Model):<br>
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)<br>
+    choice_text = models.CharField(max_length=200)<br>
+    votes = models.IntegerField(default=0)<br>
+
+<br>
+<br>
+And we have to  register these tables at admin.py<br>
+from django.contrib import admin<br>
+
+from .models import Question<br>
+admin.site.register(Question)<br><br>
+
+NOW, by creating super user we can insert data and do other task.
+<br>
+<br>
+<br>
+
+# OR,
+<br>
+
+### we also can use shell to do: 
+<br>
+$ python manage.py shell 
+<br>
+see more at: 
+<a href="https://docs.djangoproject.com/en/3.0/intro/tutorial02/">https://docs.djangoproject.com/en/3.0/intro/tutorial02/</a>
