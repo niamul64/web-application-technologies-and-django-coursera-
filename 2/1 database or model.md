@@ -78,3 +78,20 @@ $ python manage.py shell
 <br>
 see more at: 
 <a href="https://docs.djangoproject.com/en/3.0/intro/tutorial02/">https://docs.djangoproject.com/en/3.0/intro/tutorial02/</a>
+
+
+<br><br><br><br>
+
+## if the models /database gets messed up(যদি table গুলা বানাতে যেয়ে কোন ভুল করে ফেলি তাহলে ):
+<br>
+প্রথমে django প্রোজেক্ট ফাইল  এ থেকে , <br>
+python manage.py check
+<br>যদি no issues হয়য় তাহলে <br>
+
+## rm */migrations/00* <br>
+## rm db.sqlite3 <br>
+## ls -l */models.py <br>
+#Now edit the models and : create the data base again
+## python manage.py makemigrations<br>
+##python manage.py migrat<br>
+
