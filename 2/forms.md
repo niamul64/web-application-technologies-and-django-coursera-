@@ -18,4 +18,5 @@ form filleds<br>
 
 
 <br><br>drop down<br>
-<img width="500" src= "pic/drop down.JPG"/>
+<img width="500" src= "pic/drop down.JPG"/><br>
+<img width="500" src= "pic/another way of drop down.JPG"/>
