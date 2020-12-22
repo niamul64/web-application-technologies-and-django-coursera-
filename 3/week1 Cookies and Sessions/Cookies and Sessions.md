@@ -11,3 +11,6 @@ def hello(request) :
     resp.set_cookie('dj4e_cookie', 'eb530d95', max_age=1000) # cookies adding
 
     return resp
+
+
+<img src='pic/cookies and session.JPG' width="450px">
