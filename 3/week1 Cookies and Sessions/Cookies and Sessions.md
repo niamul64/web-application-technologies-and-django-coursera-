@@ -1,5 +1,5 @@
 
-code:<br>
+code:
 def hello(request) :
 
     num_visits = request.session.get('num_visits', 0) + 1
