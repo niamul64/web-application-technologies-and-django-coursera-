@@ -86,3 +86,7 @@ If there is any error the it will show here.
 
 now goto: http://niamul64.pythonanywhere.com/polls/
 check the website
+
+
+
+work on : mkvirtualenv myvirtualenv --python=/usr/bin/python3.6
